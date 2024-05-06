@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: v.nrg.fitness
+Sitemap: https://nrg.fitness/sitemap.xml

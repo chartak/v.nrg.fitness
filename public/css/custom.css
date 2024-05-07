@@ -1,0 +1,96 @@
+.ck-editor__editable,
+textarea {
+    min-height: 150px;
+}
+
+.datatable {
+    width: 100% !important;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dt-buttons {
+    margin-bottom: 0.333em;
+}
+
+.dt-buttons .btn {
+    margin-left: 0.333em;
+    border-radius: 0;
+}
+
+.table.datatable {
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 2px solid #f4f4f4;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background-image: none;
+}
+
+.select2 {
+    max-width: 100%;
+    width: 100%;
+}
+
+.searchable-title {
+    font-weight: bold;
+}
+.searchable-fields {
+    padding-left:5px;
+}
+.searchable-link {
+    padding:0 5px 0 5px;
+}
+.searchable-link:hover   {
+    cursor: pointer;
+    background: #eaeaea;
+}
+.select2-results__option {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.form-group .required::after {
+    content: " *";
+    color: red;
+}
+
+/*new styles for admin*/
+body.skin-yellow-light .main-header .navbar {
+  background-color: #ffd132;
+}
+body.skin-yellow-light .main-header .logo {
+  background-color: #252b33;
+}
+body.skin-yellow-light .main-header .navbar .sidebar-toggle, body.skin-yellow-light .fa-bell:before {
+    color: #000;
+}
+body.skin-yellow-light a:hover, .login-page .btn.btn-flat:hover {
+    color:  #000 !important;
+     background-color: #ffd132 !important;
+}
+body.skin-yellow-light .pagination>.active>a, .login-page .btn.btn-flat {
+    color:  #ffd132 !important;
+    background-color: #000 !important;
+}
+body.skin-yellow-light .sidebar-menu {
+    white-space: inherit;
+}
+body.skin-yellow-light .btn-success {
+    background-color: #252b33;
+    border-color: #ffd132;
+}
+
+/*new styles for login page*/
+.login-page, .register-page {
+    background: #323a45;
+}
+.login-logo a, .register-logo a, .login-page a {
+    color: #ffd132;
+}

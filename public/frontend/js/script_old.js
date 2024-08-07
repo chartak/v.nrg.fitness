@@ -416,7 +416,7 @@ $(document).ready(function() {
     var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
     $.ajax({
       type: "POST",
-      url:"/stockform",
+      url:"/subscribeForm",
       dataType: 'JSON',
       data: {type_id:type_id, type:sign_up_type, type_name:sign_up_type_name, full_name:name, phone:tel, _token: CSRF_TOKEN},
       beforeSend: function() {

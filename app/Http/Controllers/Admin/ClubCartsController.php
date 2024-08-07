@@ -155,7 +155,7 @@ class ClubCartsController extends Controller
     public function destroy(ClubCart $clubCart)
     {
         abort_if(Gate::denies('club_cart_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-var_dump('kuk');die;
+
         $clubCart->delete();
 
         return back();
@@ -163,7 +163,7 @@ var_dump('kuk');die;
 
     public function massDestroy(MassDestroyClubCartRequest $request)
     {
-        var_dump('kuk9999');die;
+
         ClubCart::whereIn('id', request('ids'))->delete();
 
         return response(null, Response::HTTP_NO_CONTENT);

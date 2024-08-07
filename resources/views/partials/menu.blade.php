@@ -1,14 +1,14 @@
 <aside class="main-sidebar">
     <section class="sidebar" style="height: auto;">
         <ul class="sidebar-menu tree" data-widget="tree">
-            <li>
-                <a href="{{ route("admin.home") }}">
-                    <i class="fas fa-fw fa-tachometer-alt">
+            {{--<li>--}}
+                {{--<a href="{{ route("admin.home") }}">--}}
+                    {{--<i class="fas fa-fw fa-tachometer-alt">--}}
 
-                    </i>
-                    {{ trans('global.dashboard') }}
-                </a>
-            </li>
+                    {{--</i>--}}
+                    {{--{{ trans('global.dashboard') }}--}}
+                {{--</a>--}}
+            {{--</li>--}}
             @can('user_management_access')
                 <li class="treeview">
                     <a href="#">

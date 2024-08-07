@@ -1,29 +1,5 @@
 <?php
 
-Route::redirect('/', '/login');
-
-
-Route::group([ 'prefix' => 'admin' ], function (){
-    Route::get('/home', function () {
-        if (session('status')) {
-            return redirect()->route('admin.home')->with('status', session('status'));
-        }
-        var_dump('44444');die;
-        return redirect()->route('admin.home');
-    });
-
-//    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
-//    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-
-//    Route::group([ 'prefix' => 'password' ], function (){
-//        Route::post('/email', 'Auth\AdminForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
-//        Route::get('/reset', 'Auth\AdminForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
-//        Route::get('/reset/{token}', 'Auth\AdminResetPasswordController@showResetForm')->name('admin.password.reset');
-//        Route::post('/reset', 'Auth\AdminResetPasswordController@reset');
-//    });
-});
-
-
 Auth::routes(['register' => false]);
 // Admin
 

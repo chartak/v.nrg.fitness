@@ -838,7 +838,7 @@ $(document).ready(function() {
                 var phone = aData[4].value.replace(/ /g, '').replace("(", '').replace(")", '').replace("-", '').replace("-", '');
                 data_f = {type_id: type_id, type: sign_up_type, type_name: sign_up_type_name, full_name: name, phone: phone}
             }
-            var sActionUrl = "/stockform";
+            var sActionUrl = "/subscribeForm";
             var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
 
             $.ajax({
@@ -1182,7 +1182,7 @@ $('.ui-select-indicator').click(function(){ //группа
         params._token = CSRF_TOKEN;
         $.ajax({
             type: "POST",
-            url:"/filterform",
+            url:"/filterForm",
             dataType: 'JSON',
             //async: false,
             data: params,

@@ -1,5 +1,5 @@
 <?php
-
+/*
 Route::redirect('/', '/login');
 Route::get('/home', function () {
     if (session('status')) {
@@ -71,3 +71,4 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::post('content-pages/media', 'ContentPageController@storeMedia')->name('content-pages.storeMedia');
     Route::resource('content-pages', 'ContentPageController');
 });
+*/

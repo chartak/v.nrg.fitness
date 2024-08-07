@@ -13,10 +13,10 @@ use \Illuminate\Support\Facades\Session;
 */
 
 Route::get('/','Frontend\HomeController@index');
-Route::post('/stockform','Frontend\HomeController@bannerSignup');// ajax
-Route::post('/filterform','Frontend\HomeController@scheduleTraining');//ajax
+Route::post('/subscribeForm','Frontend\HomeController@subscribeFitnessServices');// ajax
+Route::post('/filterForm','Frontend\HomeController@scheduleTraining');//ajax
 
-Route::post('/contact', ['uses' => 'Frontend\MailController@send', 'as' => 'mail.send']);
+//Route::post('/contact', ['uses' => 'Frontend\MailController@send', 'as' => 'mail.send']);
 
 Route::get('/locale/{locale}', function($locale){
 

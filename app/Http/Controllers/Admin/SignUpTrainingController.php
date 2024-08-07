@@ -130,7 +130,7 @@ class SignUpTrainingController extends Controller
     }
 
     public function destroy(SignUpTraining $signUpTraining)
-    {var_dump('pppp');die;
+    {
         abort_if(Gate::denies('sign_up_training_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $signUpTraining->delete();
@@ -139,7 +139,7 @@ class SignUpTrainingController extends Controller
     }
 
     public function massDestroy(MassDestroySignUpTrainingRequest $request)
-    {var_dump('kkkkk');die;
+    {
         SignUpTraining::whereIn('id', request('ids'))->delete();
 
         return response(null, Response::HTTP_NO_CONTENT);
